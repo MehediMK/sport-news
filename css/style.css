@@ -1,0 +1,96 @@
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+.navbar {
+    background-color: #f67f7f;
+    color: white;
+    padding: 15px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    font-size: 24px;
+}
+
+.menu {
+    display: flex;
+}
+
+.menu a {
+    color: white;
+    text-decoration: none;
+    margin: 0 15px;
+    transition: color 0.3s ease;
+}
+
+.menu a:hover {
+    color: #ffcc00;
+}
+
+.burger-menu {
+    font-size: 24px;
+    cursor: pointer;
+    display: none;
+}
+
+.content {
+    padding: 50px;
+    text-align: center;
+}
+
+.slider {
+    width: 100%;
+    overflow: hidden;
+}
+
+.slider img {
+    width: 100%;
+    height: auto;
+}
+
+.blog-container {
+    display: flex;
+    justify-content: space-around;
+    margin: 20px;
+}
+
+.blog-item {
+    width: 30%;
+    padding: 20px;
+    border: 1px solid #ccc;
+}
+
+.readmore {
+    display: block;
+    text-align: center;
+    padding: 10px;
+    background-color: #333;
+    color: white;
+    text-decoration: none;
+}
+
+@media screen and (max-width: 768px) {
+    .menu {
+        display: none;
+        flex-direction: column;
+        position: absolute;
+        top: 70px;
+        left: 0;
+        width: 100%;
+        background-color: #333;
+        text-align: center;
+    }
+
+    .menu a {
+        margin: 10px 0;
+    }
+
+    .burger-menu {
+        display: block;
+    }
+}
